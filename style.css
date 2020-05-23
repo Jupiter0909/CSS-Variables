@@ -1,0 +1,46 @@
+:root {
+  --div-background-color: red;
+  --text-color: yellow;
+  --margin: 2rem;
+  --padding: 20px;
+  --transition: 0.5s all ease-out;
+  --box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: var(--box-sizing);
+}
+
+.red {
+  background-color: var(--div-background-color);
+  color: var(--text-color);
+  margin: var(--margin);
+  padding: var(--padding);
+}
+
+.blue {
+  --div-background-color: blue;
+  background-color: var(--div-background-color);
+  --text-color: pink;
+  color: var(--text-color);
+  margin: var(--margin);
+  padding: var(--padding);
+}
+
+.blue:hover {
+  --div-background-color: red;
+  background-color: var(--div-background-color);
+  --text-color: yellow;
+  color: var(--text-color);
+  transition: var(--transition);
+}
+
+.red:hover {
+  --div-background-color: blue;
+  background-color: var(--div-background-color);
+  --text-color: pink;
+  color: var(--text-color);
+  transition: var(--transition);
+}
